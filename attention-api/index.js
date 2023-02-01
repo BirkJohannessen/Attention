@@ -47,7 +47,7 @@ attention.post('/notify', (req, res) => {
   res.send(resObj);
 });
 
-michy2.post('/notifyAdvanced', (req, res) => {
+attention.post('/notifyAdvanced', (req, res) => {
 
   const allowedCalls = advancedCalls.map(O => O.name);
   const inObj = req.body;
